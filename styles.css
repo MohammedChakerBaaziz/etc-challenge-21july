@@ -1,0 +1,298 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a192f;
+  color: #f3f3f3;
+  font-family: "Kanit";
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 65px;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #64ffda;
+}
+
+a {
+  color: rgb(152, 152, 255);
+}
+
+a:visited {
+  color: rgb(208, 161, 252);
+}
+
+#title:hover {
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(33, 45, 68);
+  height: 65px;
+}
+
+.nav-side {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+.nav-right {
+  gap: 20px;
+}
+
+.nav-item a {
+  border: 2px solid #f3f3f3;
+  border-radius: 16px;
+  padding: 5px 9px;
+  font-size: 18px;
+  color: #f3f3f3;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #64ffda;
+  border: 2px solid #64ffda;
+  text-decoration: underline;
+}
+
+.logo-img {
+  height: 48px;
+}
+
+/* center table in the middle of the page */
+#technical {
+  width: 100%;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+/* give <th> and <td> elements **padding** of 12px to the **top and bottom** sides and 10px to the **right and left** sides  */
+th,
+td {
+  border: 1px solid #f3f3f3;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+/* make all <th> elements' background color be (33 red, 45 green, 68 blue) and change their text color to #64ffda */
+th {
+  color: #64ffda;
+  background-color: rgb(33, 45, 68);
+}
+
+/* give the **<td>** elements that are **parents of** the **Departments** and **Activities** tables a class of **inner-table-wrapper** */
+
+/* remove **padding** from inner-table-wrapper elements */
+.inner-table-wrapper {
+  padding: 0;
+}
+
+/* give the **Departments** and **Activities** tables a class of **inner-table** */
+
+/* make the inner tables take the **entire width** of their cell */
+.inner-table {
+  width: 100%;
+}
+
+/* remove outer borders from the inner tables' cells */
+
+/* remove **top** and **left** border of all **<th>** elements that are **children of** .inner-table elements */
+.inner-table th {
+  border-top: 0;
+  border-left: 0;
+}
+
+/* remove **top** and **left** border of all **<td>** elements that are **children of** .inner-table elements */
+.inner-table td {
+  border-bottom: 0;
+  border-left: 0;
+}
+
+/* remove **right border** of **the last <th>** and **<td>** elements that are **children** of .inner-table elements */
+.inner-table th:last-child {
+  border-right: 0;
+}
+
+.inner-table td:last-child {
+  border-right: 0;
+}
+
+.content {
+  margin-top: 65px;
+  width: 100%;
+}
+
+/* making textarea not resisable */
+textarea {
+  resize: none;
+}
+
+.content section {
+  margin-top: 30px;
+}
+
+.form {
+  padding: 8px 20px;
+
+  /* giving the form card a width of 500px */
+  width: 500px;
+  background-color: rgb(33, 45, 68);
+  border-radius: 10px;
+  margin: auto;
+}
+
+/* centering the form's title */
+.form h2 {
+  text-align: center;
+}
+
+/* making sure all form-control elements (text+input) take the entire form's width */
+.form-control {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* making the form inputs and the submit button take the entire form's width */
+.form-input,
+.form-control button {
+  width: 100%;
+  padding: 8px 10px;
+}
+
+/* setting style properties for inputs (name, email, birthdate and select) such as bg color and text color... */
+.form-input {
+  background-color: #4d5868;
+  border: none;
+  color: #f3f3f3;
+  margin-top: 5px;
+}
+
+/* properties of form inputs when they r focused */
+.form-input:focus {
+  /* to remove the blue outline */
+  outline: 0;
+
+  /* to give it a bottom border */
+  border-bottom: 2px solid #64ffda;
+
+  /* to give it a slight shadow to indicate it is chosen*/
+  box-shadow: 1px -1px 2px #757575;
+}
+
+/* styling the submit button */
+.form-control button {
+  background-color: #64ffda;
+  border: none;
+  color: #0a192f;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer {
+  /* to push the footer down from the form card by 100px */
+  margin-top: 100px;
+
+  /* to make it cover the entire width of the screen */
+  width: 100%;
+  background-color: rgb(33, 45, 68);
+
+  /* to make all texts under the footer have this color */
+  color: #f3f3f3;
+}
+
+/* styling the contacts part of the footer */
+#contacts {
+  padding: 30px 10px;
+
+  /* making it a flexbox to make placing elements easier */
+  display: flex;
+
+  /* to jump lines when there is no enough screen space */
+  flex-wrap: wrap;
+
+  /* to put space between all elements of the #contacts bar, means if u have 2 items, the first item will stick the the left and the second to the right */
+
+  /* and if u have 3 items, the first sticks to the left, the second to the middle and the third to the right */
+  justify-content: space-between;
+}
+
+.footer-contacts-side {
+  /* display flex to make it easy to center elements */
+  display: flex;
+
+  /* to make each side grow and take the maximum width possible */
+  flex: 1;
+
+  /* to center the element */
+  justify-content: center;
+  align-items: center;
+}
+
+/* to make all links under the footer follow these styles */
+#footer a {
+  /* to prevent links from being blue by default */
+  color: #f3f3f3;
+
+  /* to remove underline */
+  text-decoration: none;
+}
+
+/* making the cursor become pointer when hovering over icons */
+#footer i {
+  cursor: pointer;
+}
+
+/* in order to make the email and its icon stick to the left */
+.footer-contacts-left * {
+  margin-right: auto;
+}
+
+/* in order to make the arrow icon stick to the right */
+.footer-contacts-right * {
+  margin-left: auto;
+}
+
+/* styling the icons */
+.social-icon i,
+.footer-contacts-side i {
+  font-size: x-large;
+  margin: 5px;
+}
+
+/* styling the copyrights bar */
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #191c20;
+  color: #4d5868;
+  font-size: 14px;
+}
